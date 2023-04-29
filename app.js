@@ -45,7 +45,7 @@ app.post("/", function (req, res) {
 	// set the post options and authorization key
 	const options = {
 		method: "POST",
-		auth: "apikey:02434bb037a3a1d7ee5a2b698fe81194-us8",
+		auth: "apikey:c8e917f1bfeeb55b30ab80fb1c37347b-us8",
 	};
 
 	const request = https.request(url, options, function (response) {
@@ -63,7 +63,7 @@ app.post("/", function (req, res) {
 	});
 
 	// comment the below line if you want to check the response status code 400
-	var temp = request.write(jsonData);
+	request.write(jsonData);
 	request.end();
 });
 
@@ -78,7 +78,7 @@ app.listen(process.env.PORT || 3000, function () {
 });
 
 // api key
-// 02434bb037a3a1d7ee5a2b698fe81194-us8
+// c8e917f1bfeeb55b30ab80fb1c37347b-us8
 
 // list id
 // e521f2e25f
