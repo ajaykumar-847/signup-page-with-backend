@@ -45,7 +45,7 @@ app.post("/", function (req, res) {
 	// set the post options and authorization key
 	const options = {
 		method: "POST",
-		auth: "apikey:c8e917f1bfeeb55b30ab80fb1c37347b-us8",
+		auth: "apikey:a2e1cd9b3f36ad0bcb90f4fbf2a828b9-us8"
 	};
 
 	const request = https.request(url, options, function (response) {
@@ -78,7 +78,7 @@ app.listen(process.env.PORT || 3000, function () {
 });
 
 // api key
-// c8e917f1bfeeb55b30ab80fb1c37347b-us8
+// a2e1cd9b3f36ad0bcb90f4fbf2a828b9-us8
 
 // list id
 // e521f2e25f
